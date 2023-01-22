@@ -110,7 +110,7 @@ Otherwise, Python will not find any desired nodes.
 ~~~~ {.python}
 import xml.etree.ElementTree as ET
 
-input = '''
+xmlinput = '''
 <stuff>
   <users>
     <user x="2">
@@ -124,7 +124,7 @@ input = '''
   </users>
 </stuff>'''
 
-stuff = ET.fromstring(input)
+stuff = ET.fromstring(xmlinput)
 
 lst = stuff.findall('users/user')
 print('User count:', len(lst))
